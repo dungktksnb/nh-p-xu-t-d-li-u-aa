@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="dung">
+<select id="dungngu">
+    <option value="a">VNĐ</option>
+    <option value="b">USD</option>
+</select>
+<select id="dungkongu">
+    <option value="a">VNĐ</option>
+    <option value="b">USD</option>
+</select>
+<button onclick="lay_gia_tri()">convert</button>
+
+<script>
+    function lay_gia_tri(){
+        let giatrivao =document.getElementById("dung").value;
+        let vnd = document.getElementById("dungngu").value;
+        let usd = document.getElementById("dungkongu").value;
+        if(vnd == usd){
+            alert(giatrivao)
+        }
+        if(vnd== "a"&&usd=="b"){
+            alert(giatrivao/24000)
+        }
+        if(vnd=="b"&&usd=="a"){
+            alert(giatrivao*24000)
+        }
+
+
+    }
+
+</script>
+
+
+
+
+
+</body>
+</html>
